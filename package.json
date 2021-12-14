@@ -1,0 +1,16 @@
+{
+  "name": "nicotinemag-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "nodemon server",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "cooolhandluke.github.io"
+  },
+  "author": "Luke Johnson",
+  "license": "ISC"
+}
