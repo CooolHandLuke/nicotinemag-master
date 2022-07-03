@@ -488,8 +488,9 @@ section.story-menu {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 32em;
-  width: 25em;
+  height: 32em !important;
+  width: 25em !important;
+
 }
 
 /*////////////STOCKISTS///////////*/
