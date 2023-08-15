@@ -1,18 +1,17 @@
 @font-face {
-    font-family: 'Futura';
-    src: local('Futura Medium'), 
-        local('Futura-Medium'),
-        local('Futura_Medium'),
-        url('fonts/Futura_Medium.otf')
-        format('opentype');
-    src: local('Futura Medium'), 
-        local('Futura-Medium'),
-        local('Futura_Medium'),
-        url('fonts/Futura_ICG.ttf')
-        format('truetype');
+  font-family: 'Futura';
+  src: local('Futura Medium'),
+    local('Futura-Medium'),
+    local('Futura_Medium'),
+    url('fonts/Futura_Medium.otf') format('opentype');
+  src: local('Futura Medium'),
+    local('Futura-Medium'),
+    local('Futura_Medium'),
+    url('fonts/Futura_ICG.ttf') format('truetype');
 }
 
-html, body {
+html,
+body {
   font-family: 'Futura', sans-serif;
   min-height: 100%;
   max-height: 100%;
@@ -31,16 +30,20 @@ body {
 /* something to commit */
 
 html {
-    overflow: scroll;
-    overflow-x: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
 }
+
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-    background: #FF0000;
+  background: #FF0000;
 }
 
 .container {
@@ -52,8 +55,8 @@ html {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;  
-  
+  display: flex;
+
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
 }
@@ -79,8 +82,8 @@ ul {
   line-height: 100%;
 }
 
-.flex{
-   display: -webkit-box;
+.flex {
+  display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -95,7 +98,8 @@ ul li {
 }
 
 ul li#logo {
-  font-size: 200%; /*30px*/
+  font-size: 200%;
+  /*30px*/
   letter-spacing: -1.4px;
 }
 
@@ -111,6 +115,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 .center {
   text-align: center;
 }
@@ -144,33 +149,33 @@ footer {
 
 div.social-media img {
   max-height: 30px;
-    max-width: 30px;
-     width: auto;
-     height: auto;
+  max-width: 30px;
+  width: auto;
+  height: auto;
 }
 
 .fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
 }
 
 .fullscreen-bg__video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    -webkit-transform: translate(-50%, -50%);
-       -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 div.slick-slider {
@@ -182,13 +187,13 @@ div.slick-slider {
   width: 943px;
   margin-top: 0em;
   margin-bottom: 1.5em;
-/*  border: 2px solid white;*/
+  /*  border: 2px solid white;*/
   height: 80%;
 }
 
 .slick-slide {
-   transition: opacity .5ms ease;
-   outline: none !important;
+  transition: opacity .5ms ease;
+  outline: none !important;
 }
 
 .slick-slide.opacidown {
@@ -196,13 +201,13 @@ div.slick-slider {
 }
 
 div.slick-current {
-   opacity: 1;
-   transition: opacity .5ms ease;
+  opacity: 1;
+  transition: opacity .5ms ease;
 }
 
 div.slick-active {
-   opacity: 1;
-   transition: opacity .5ms ease;
+  opacity: 1;
+  transition: opacity .5ms ease;
 }
 
 section#buy {
@@ -221,16 +226,17 @@ section#buy a {
 }
 
 #no-button {
-    cursor: inherit;
+  cursor: inherit;
 }
+
 /*/////////// ABOUT /////////*/
 
 
 .vertical-center {
   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 section#about {
@@ -263,44 +269,47 @@ section#current {
 /*///////// CARTON /////////*/
 
 .carton {
- width: 80%;
- margin-right:auto;
- margin-left:auto;
- overflow: hidden;
- padding-top: 1em;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-top: 1em;
 }
 
 .galleryItem img {
- max-width: 100%;
- -webkit-border-radius: 1px;
- -moz-border-radius: 1px;
- border-radius: 1px;
+  max-width: 100%;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
 }
 
 .galleryItem {
- float: left;
- width: 16%;
+  float: left;
+  width: 16%;
 }
 
 .small-margin {
   margin: .5% .5% 14px 0;
 }
 
-.paypal_btn{
-display: inline-block;
-font-family: inherit;
-font-size: 1em;
-color: #000;
-padding: 2px 14px;
-margin: 0;
-background: #fff;
-border: 0;
-cursor: pointer;
-outline: none;
+.paypal_btn {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1em;
+  color: #000;
+  padding: 2px 14px;
+  margin: 0;
+  background: #fff;
+  border: 0;
+  cursor: pointer;
+  outline: none;
 }
 
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
-    -webkit-appearance: button-bevel;
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button-bevel;
 }
 
 
@@ -328,96 +337,97 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 
- #digital1 { 
-  background-image: url("../images/digital/Feb_2023_Bundle/slices/slice_01.jpg");
+#digital1 {
+  background-image: url("../images/digital/August_2023_Bundle/Slices/Slice01.jpg");
   margin-right: 4%;
-  }
+}
 
-  #digital2 { 
-  background-image: url("../images/digital/Feb_2023_Bundle/slices/slice_02.jpg");
+#digital2 {
+  background-image: url("../images/digital/August_2023_Bundle/Slices/Slice02.jpg");
   margin-right: 4%;
-  }
+}
 
-  #digital3 { 
-  background-image: url("../images/digital/Feb_2023_Bundle/slices/slice_03.jpg");
+#digital3 {
+  background-image: url("../images/digital/August_2023_Bundle/Slices/Slice03.jpg");
   margin-right: 4%;
-  }
+}
 
-  #digital4 { 
-  background-image: url("../images/digital/Feb_2023_Bundle/slices/slice_04.jpg");
-  }
+#digital4 {
+  background-image: url("../images/digital/August_2023_Bundle/Slices/Slice04.jpg");
+}
 
- .story {
-    position: absolute;
-    left: 50%;
-    top:123%;
-    transform: translate(-50%, -50%);
-    height: 100%;
- }
+.story {
+  position: absolute;
+  left: 50%;
+  top: 123%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
 
 
- .story_image {
+.story_image {
   background: url("../NICOTINE02.jpg");
   background-size: contain;
   height: 100%;
- }
+}
 
- #story_image_1 {
+#story_image_1 {
   height: 27.2em;
   float: left;
   margin-right: 3%;
- }
-  
-  #story_image_3 {
-    float: right;
-    height: auto;
-    width: 65%;
-  }
+}
 
-  .full-width-story-image {
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: 100%;
-    display: block;
-  }
+#story_image_3 {
+  float: right;
+  height: auto;
+  width: 65%;
+}
 
- p.italic {
+.full-width-story-image {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+p.italic {
   font-style: italic;
- }
+}
 
- p.profile {
+p.profile {
   margin: 0;
- }
+}
 
- div#info {
-    margin: 0 auto;
-    display: table; 
-    margin-bottom: 6em;
-    margin-top: 6em;
- }
+div#info {
+  margin: 0 auto;
+  display: table;
+  margin-bottom: 6em;
+  margin-top: 6em;
+}
 
- .underline {
+.underline {
   text-decoration: underline;
- }
+}
 
-  p.padding {
-    padding-top: 10%;
-  }
+p.padding {
+  padding-top: 10%;
+}
 
-  .margin {
-     margin-bottom: 20%;
-  }
+.margin {
+  margin-bottom: 20%;
+}
 
-   .banner .margin {
-     margin-bottom: 10%;
-     margin-top: 5%;
-  }
-  .margin-bottom {
-    margin-bottom: 10%;
-  } 
+.banner .margin {
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
 
-  .group:after {
+.margin-bottom {
+  margin-bottom: 10%;
+}
+
+.group:after {
   content: "";
   display: table;
   clear: both;
@@ -433,9 +443,9 @@ p.credits {
 }
 
 #crystal-text {
-    margin-left: auto;
-    margin-right: auto;
-    display: table;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
 }
 
 .video {
@@ -448,35 +458,37 @@ section.story-menu {
 }
 
 .zoom {
-    transition: transform .2s; /* Animation */
+  transition: transform .2s;
+  /* Animation */
 }
 
 .zoom:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
 
-  .shop {
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 3em;
-    width: 100%;
-    margin-top: 2em;
-    position: absolute;
-    left: 0;
-  }
+.shop {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 3em;
+  width: 100%;
+  margin-top: 2em;
+  position: absolute;
+  left: 0;
+}
 
 
 .shop-child {
-  flex-grow:0;
+  flex-grow: 0;
   align-self: center;
 }
 
@@ -498,9 +510,9 @@ section.story-menu {
 /*////////////STOCKISTS///////////*/
 
 section#stockists {
- text-align: center;
-    margin-top: 10%;
-    margin-bottom: 3%;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 3%;
 
 }
 
@@ -1619,7 +1631,7 @@ input[type="submit" i] {
     width: 95%;
   }
 
-   .story {
+  .story {
     width: 95%;
   }
 
@@ -1628,8 +1640,8 @@ input[type="submit" i] {
   }
 
   div#navbar-ipad {
-  display: block;
-   margin-top: 5%;
+    display: block;
+    margin-top: 5%;
   }
 
   ul li#logo {
@@ -1639,7 +1651,7 @@ input[type="submit" i] {
   ul li#logo-ipad {
     display: block;
     font-size: 2em;
-    letter-spacing: -1.4px; 
+    letter-spacing: -1.4px;
     margin-top: 3%;
   }
 
@@ -1657,20 +1669,20 @@ input[type="submit" i] {
     font-size: 83%;
   }
 
-  
+
 
 }
 
 
 
 
- /* ----------- smaller WIDTH browsers ----------- */
+/* ----------- smaller WIDTH browsers ----------- */
 @media only screen and (min-width: 320px) and (max-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
-    body {
+  body {
     width: 95%;
   }
 
-   .story {
+  .story {
     width: 95%;
     top: 110%;
   }
@@ -1680,9 +1692,9 @@ input[type="submit" i] {
   }
 
 
-div#navbar-ipad {
-  display: block;
-  margin-top: 5%;
+  div#navbar-ipad {
+    display: block;
+    margin-top: 5%;
   }
 
   ul {
@@ -1697,7 +1709,7 @@ div#navbar-ipad {
   ul li#logo-ipad {
     display: block;
     font-size: 1.7em;
-    letter-spacing: -1.4px; 
+    letter-spacing: -1.4px;
     margin-top: 3%;
   }
 
@@ -1714,16 +1726,19 @@ div#navbar-ipad {
   }
 
   *::-webkit-media-controls-start-playback-button {
-  display: none!important;
-  -webkit-appearance: none;
-  opacity: 0;
-  } 
+    display: none !important;
+    -webkit-appearance: none;
+    opacity: 0;
+  }
 
-  _::-webkit-:host:not(:root:root), .cost { margin-top: -20px; }
+  _::-webkit-:host:not(:root:root),
+  .cost {
+    margin-top: -20px;
+  }
 
   section#buy {
-   bottom: -20px;
-}
+    bottom: -20px;
+  }
 
   section#about {
     width: 65%;
@@ -1737,7 +1752,7 @@ div#navbar-ipad {
   }
 
   section#about p {
-     -webkit-margin-before: 0em;
+    -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
   }
 
@@ -1748,39 +1763,39 @@ div#navbar-ipad {
   section#stockists {
     margin-top: 8%;
     font-size: 57%;
-    
+
   }
 
 
 
   .slider-image {
-  background-position: 50% 25%;
-  height: 20em;
+    background-position: 50% 25%;
+    height: 20em;
   }
 
   #img0 {
-  background-position: center top;
-  height: 20em;
+    background-position: center top;
+    height: 20em;
   }
 
   #issue02_img0 {
-  background-position: center top;
-  height: 20em;
+    background-position: center top;
+    height: 20em;
   }
 
   #issue03_img0 {
-  background-position: center top;
-  height: 20em;
+    background-position: center top;
+    height: 20em;
   }
 
   #issue04_img0 {
-  background-position: center top;
-  height: 20em;
+    background-position: center top;
+    height: 20em;
   }
 
-   #issue05_img0 {
-  background-position: center top;
-  height: 20em;
+  #issue05_img0 {
+    background-position: center top;
+    height: 20em;
   }
 
   #issue06_img0 {
@@ -1808,18 +1823,19 @@ div#navbar-ipad {
   }
 
 
- /* #shop-left {
+  /* #shop-left {
       left: 0; 
   }*/
-  .shop-vertical-center, .shop-archive {
-      position: relative;
-      top: 50%;
-      left: 0; 
-      transform: translate(0%);
+  .shop-vertical-center,
+  .shop-archive {
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(0%);
   }
 
   .margin-top {
-      margin-top: 3em;
+    margin-top: 3em;
   }
 }
 
@@ -1834,16 +1850,16 @@ div#navbar-ipad {
 
 
 @media only screen and (min-width: 569px) and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 1) {
-   body {
+  body {
     width: 95%;
   }
 
-   .story {
+  .story {
     top: 118%;
     width: 95%;
   }
 
-   section#stockists {
+  section#stockists {
     margin-top: 10%;
     font-size: 70%;
   }
@@ -1854,29 +1870,30 @@ div#navbar-ipad {
     flex-direction: row;
   }
 
-  .shop-vertical-center, .shop-archive {
-      position: relative;
-      top: 50%;
-      left: 0; 
-      transform: translate(0%);
+  .shop-vertical-center,
+  .shop-archive {
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(0%);
   }
 
   .margin-top {
-      margin-top: 3em;
+    margin-top: 3em;
   }
 
   .shop-image {
     width: 58em;
   }
 
-  }
+}
 
-  @media only screen and (min-width: 801px) and (max-width: 899px) and (-webkit-min-device-pixel-ratio: 1) {
-   body {
+@media only screen and (min-width: 801px) and (max-width: 899px) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
     width: 95%;
   }
 
-   .story {
+  .story {
     top: 120%;
     width: 95%;
   }
@@ -1886,12 +1903,12 @@ div#navbar-ipad {
     font-size: 70%;
   }
 
-    .shop {
+  .shop {
     width: 100%;
     left: 0;
   }
 
- div.banner img.celine {
+  div.banner img.celine {
     margin-top: 4em;
   }
 
@@ -1900,7 +1917,7 @@ div#navbar-ipad {
 }
 
 @media only screen and (min-width: 568px) and (max-width: 801px) and (-webkit-min-device-pixel-ratio: 1) {
-div.banner img.celine {
+  div.banner img.celine {
     margin-top: 3em;
   }
 }
@@ -1910,7 +1927,7 @@ div.banner img.celine {
     width: 65%;
   }
 
-   .story {
+  .story {
     top: 103%;
     width: 65%;
   }
@@ -1928,7 +1945,7 @@ div.banner img.celine {
     margin-top: 10em;
   }
 
-   section#stockists {
+  section#stockists {
     margin-top: 12%;
   }
 
@@ -1954,12 +1971,12 @@ div.banner img.celine {
   section#stockists {
     margin-top: 8%;
     font-size: 70%;
-     padding-top: 0%;
+    padding-top: 0%;
   }
 
-.slider-image{
-  height: 28em;
-}
+  .slider-image {
+    height: 28em;
+  }
 
 
 
@@ -1968,7 +1985,7 @@ div.banner img.celine {
 /* X-LARGE SCREENS*/
 @media screen and (min-device-width: 1550px) and (-webkit-min-device-pixel-ratio: 1) {
   section#stockists {
-     padding-top: 0%;
+    padding-top: 0%;
   }
 
 }
@@ -1977,13 +1994,13 @@ div.banner img.celine {
 
 
 
-  /* iphone Portrait and Landscape */
+/* iphone Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
   body {
     width: 95%;
   }
 
-   .story {
+  .story {
     width: 95%;
     top: 110%;
   }
@@ -2001,7 +2018,7 @@ div.banner img.celine {
   }
 
   div#navbar-ipad {
-  display: block;
+    display: block;
   }
 
   div#navbar {
@@ -2020,7 +2037,7 @@ div.banner img.celine {
   ul li#logo-ipad {
     display: block;
     font-size: 1.7em;
-    letter-spacing: -1.4px; 
+    letter-spacing: -1.4px;
     margin-top: 3%;
   }
 
@@ -2037,24 +2054,28 @@ div.banner img.celine {
   }
 
   *::-webkit-media-controls-start-playback-button {
-  display: none!important;
-  -webkit-appearance: none;
-  opacity: 0;
-  } 
-  video::-webkit-media-controls {
-    display:none !important;
+    display: none !important;
+    -webkit-appearance: none;
     opacity: 0;
-}
+  }
 
-video::-webkit-media-controls-enclosure {
-  display:none !important;
-}
+  video::-webkit-media-controls {
+    display: none !important;
+    opacity: 0;
+  }
 
-  _::-webkit-:host:not(:root:root), .cost { margin-top: -20px; }
+  video::-webkit-media-controls-enclosure {
+    display: none !important;
+  }
+
+  _::-webkit-:host:not(:root:root),
+  .cost {
+    margin-top: -20px;
+  }
 
   section#buy {
-   bottom: -20px;
-}
+    bottom: -20px;
+  }
 
   section#about {
     width: 65%;
@@ -2068,7 +2089,7 @@ video::-webkit-media-controls-enclosure {
   }
 
   section#about p {
-     -webkit-margin-before: 0em;
+    -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
   }
 
@@ -2076,33 +2097,33 @@ video::-webkit-media-controls-enclosure {
     margin-top: 8%;
   }
 
-   section#stockists {
-     margin-top: 15%;
+  section#stockists {
+    margin-top: 15%;
     font-size: 60%;
-     padding-top: 0%;
+    padding-top: 0%;
   }
 
 
   .slider-image {
-  background-position: 50% 25%;
-  height: 20em;
+    background-position: 50% 25%;
+    height: 20em;
   }
 
   #img0 {
-  background-position: center top;
-  height: 20em;
+    background-position: center top;
+    height: 20em;
   }
 
   #issue02_img0 {
-  background-position: center top;
-  height: 20em;
+    background-position: center top;
+    height: 20em;
   }
 
   #issue03_img0 {
     background-position: center top;
     height: 20em;
   }
-  
+
   #issue04_img0 {
     background-position: center top;
     height: 20em;
@@ -2128,35 +2149,35 @@ video::-webkit-media-controls-enclosure {
     position: static;
   }
 
-  .banner img.celine{
+  .banner img.celine {
     margin-top: 0em;
   }
 
-  
+
 
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
-   body {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
     width: 95%;
   }
 
-   .story {
+  .story {
     width: 95%;
     top: 110%;
   }
-  
+
   section#stockists {
     margin-top: 15%;
     font-size: 64%;
     margin-bottom: 10%;
-     padding-top: 0%;
+    padding-top: 0%;
   }
 
-    .shop {
+  .shop {
     width: 100%;
     position: static;
   }
@@ -2175,25 +2196,27 @@ video::-webkit-media-controls-enclosure {
   }
 
   *::-webkit-media-controls-start-playback-button {
-  display: none!important;
-  -webkit-appearance: none;
-  opacity: 0;
-}
-video::-webkit-media-controls {
-    display:none !important;
+    display: none !important;
+    -webkit-appearance: none;
     opacity: 0;
-}
-video::-webkit-media-controls-start-playback-button {
-  display: none !important;
-}
+  }
 
-video::-webkit-media-controls-enclosure {
-  display:none !important;
-}
+  video::-webkit-media-controls {
+    display: none !important;
+    opacity: 0;
+  }
+
+  video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+  }
+
+  video::-webkit-media-controls-enclosure {
+    display: none !important;
+  }
 
   .custom-video-controls {
-  z-index: 2147483647;
-}
+    z-index: 2147483647;
+  }
 
 
 }
@@ -2201,7 +2224,7 @@ video::-webkit-media-controls-enclosure {
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) { 
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   .story {
     top: 105%;
   }
@@ -2210,14 +2233,14 @@ video::-webkit-media-controls-enclosure {
 /* ----------- iPhone X ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .story {
     top: 100%;
   }
 }
 
-@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) { 
-    .story {
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  .story {
     top: 100%;
   }
 }
@@ -2225,16 +2248,16 @@ video::-webkit-media-controls-enclosure {
 /* ----------- iPad 1 and 2 ----------- */
 /* iPad 1 and 2 Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-   body {
+  body {
     width: 80%;
-   }
-    
+  }
+
   .story {
     width: 80%;
     top: 110%;
   }
 
-    .shop {
+  .shop {
     width: 100%;
     flex-direction: row;
     position: static;
@@ -2245,12 +2268,12 @@ video::-webkit-media-controls-enclosure {
   }
 
   div#navbar-ipad {
-  display: block;
+    display: block;
   }
 
   ul {
     margin-top: 5%;
-    }
+  }
 
   ul li#logo {
     display: none;
@@ -2259,7 +2282,7 @@ video::-webkit-media-controls-enclosure {
   ul li#logo-ipad {
     display: block;
     font-size: 2em;
-    letter-spacing: -1.4px; 
+    letter-spacing: -1.4px;
     margin-top: 3%;
   }
 
@@ -2273,23 +2296,22 @@ video::-webkit-media-controls-enclosure {
 
   .bottom-center {
     bottom: 40px;
-    }-
-    
+  }
 
-    *::-webkit-media-controls-start-playback-button {
-  display: none!important;
-  -webkit-appearance: none;
-  opacity: 0;
-  } 
-  
+  - *::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+    opacity: 0;
+  }
+
   section#stockists {
     margin-top: 10%;
-     padding-top: 0%;
+    padding-top: 0%;
   }
 
   .bottom-align {
     left: 0%;
-  } 
+  }
 
 }
 
@@ -2297,7 +2319,7 @@ video::-webkit-media-controls-enclosure {
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-   .story {
+  .story {
     top: 105%;
   }
 }
@@ -2312,13 +2334,9 @@ video::-webkit-media-controls-enclosure {
 }
 
 /*safari hacks*/
-  
-@media \\0 screen and (min-width: 320px) and (max-width: 568px){
+
+@media \\0 screen and (min-width: 320px) and (max-width: 568px) {
   .story {
-    top:105%;
-    }
+    top: 105%;
   }
-
-
-
-
+}
