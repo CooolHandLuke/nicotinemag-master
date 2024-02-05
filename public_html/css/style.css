@@ -1,18 +1,14 @@
 @font-face {
-  font-family: 'Futura';
-  src: local('Futura Medium'),
-    local('Futura-Medium'),
-    local('Futura_Medium'),
-    url('fonts/Futura_Medium.otf') format('opentype');
-  src: local('Futura Medium'),
-    local('Futura-Medium'),
-    local('Futura_Medium'),
-    url('fonts/Futura_ICG.ttf') format('truetype');
+  font-family: "Futura";
+  src: local("Futura Medium"), local("Futura-Medium"), local("Futura_Medium"),
+    url("fonts/Futura_Medium.otf") format("opentype");
+  src: local("Futura Medium"), local("Futura-Medium"), local("Futura_Medium"),
+    url("fonts/Futura_ICG.ttf") format("truetype");
 }
 
 html,
 body {
-  font-family: 'Futura', sans-serif;
+  font-family: "Futura", sans-serif;
   min-height: 100%;
   max-height: 100%;
   overflow-x: hidden;
@@ -43,7 +39,7 @@ html {
 
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-  background: #FF0000;
+  background: #ff0000;
 }
 
 .container {
@@ -61,7 +57,6 @@ html {
   flex-flow: row wrap;
 }
 
-
 div#navbar-ipad {
   display: none;
 }
@@ -72,7 +67,7 @@ div#navbar {
 }
 
 .nav {
-  letter-spacing: -.3px;
+  letter-spacing: -0.3px;
 }
 
 ul {
@@ -90,7 +85,6 @@ ul {
   display: flex;
   justify-content: space-between;
   -webkit-justify-content: space-between;
-
 }
 
 ul li {
@@ -134,7 +128,7 @@ address a {
   text-decoration: none;
   color: inherit;
   font-style: normal;
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 address p {
@@ -144,7 +138,7 @@ address p {
 }
 
 footer {
-  padding-bottom: .25em;
+  padding-bottom: 0.25em;
 }
 
 div.social-media img {
@@ -192,7 +186,7 @@ div.slick-slider {
 }
 
 .slick-slide {
-  transition: opacity .5ms ease;
+  transition: opacity 0.5ms ease;
   outline: none !important;
 }
 
@@ -202,23 +196,21 @@ div.slick-slider {
 
 div.slick-current {
   opacity: 1;
-  transition: opacity .5ms ease;
+  transition: opacity 0.5ms ease;
 }
 
 div.slick-active {
   opacity: 1;
-  transition: opacity .5ms ease;
+  transition: opacity 0.5ms ease;
 }
 
 section#buy {
   text-align: center;
-
 }
 
 section#buy a {
   color: inherit;
   text-decoration: none;
-
 }
 
 .margin-top {
@@ -230,7 +222,6 @@ section#buy a {
 }
 
 /*/////////// ABOUT /////////*/
-
 
 .vertical-center {
   position: absolute;
@@ -265,7 +256,6 @@ section#current {
   text-align: center;
 }
 
-
 /*///////// CARTON /////////*/
 
 .carton {
@@ -289,7 +279,7 @@ section#current {
 }
 
 .small-margin {
-  margin: .5% .5% 14px 0;
+  margin: 0.5% 0.5% 14px 0;
 }
 
 .paypal_btn {
@@ -312,13 +302,10 @@ input[type="submit"] {
   -webkit-appearance: button-bevel;
 }
 
-
 /*//////////// DIGITAL /////////////*/
 .banner img.celine {
   margin-top: 1em;
 }
-
-
 
 .container {
   padding: 0;
@@ -336,24 +323,23 @@ input[type="submit"] {
   height: 55vh;
 }
 
-
 #digital1 {
-  background-image: url("../images/digital/August_2023_Bundle/Slices/Slice01.jpg");
+  background-image: url("../images/digital/Feb 2024 Bundle/Slices/Slice_01.jpg");
   margin-right: 4%;
 }
 
 #digital2 {
-  background-image: url("../images/digital/August_2023_Bundle/Slices/Slice02.jpg");
+  background-image: url("../images/digital/Feb 2024 Bundle/Slices/Slice_02.jpg");
   margin-right: 4%;
 }
 
 #digital3 {
-  background-image: url("../images/digital/August_2023_Bundle/Slices/Slice03.jpg");
+  background-image: url("../images/digital/Feb 2024 Bundle/Slices/Slice_03.jpg");
   margin-right: 4%;
 }
 
 #digital4 {
-  background-image: url("../images/digital/August_2023_Bundle/Slices/Slice04.jpg");
+  background-image: url("../images/digital/Feb 2024 Bundle/Slices/Slice_04.jpg");
 }
 
 .story {
@@ -363,7 +349,6 @@ input[type="submit"] {
   transform: translate(-50%, -50%);
   height: 100%;
 }
-
 
 .story_image {
   background: url("../NICOTINE02.jpg");
@@ -434,7 +419,7 @@ p.padding {
 }
 
 p.text {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 p.credits {
@@ -458,7 +443,7 @@ section.story-menu {
 }
 
 .zoom {
-  transition: transform .2s;
+  transition: transform 0.2s;
   /* Animation */
 }
 
@@ -466,8 +451,6 @@ section.story-menu {
   transform: scale(1.1);
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-
-
 
 .shop {
   display: flex;
@@ -486,7 +469,6 @@ section.story-menu {
   left: 0;
 }
 
-
 .shop-child {
   flex-grow: 0;
   align-self: center;
@@ -504,7 +486,6 @@ section.story-menu {
   background-position: center;
   height: 32em !important;
   width: 25em !important;
-
 }
 
 /*////////////STOCKISTS///////////*/
@@ -513,7 +494,6 @@ section#stockists {
   text-align: center;
   margin-top: 10%;
   margin-bottom: 3%;
-
 }
 
 /*//////// SLIDER IMAGES /////////*/
@@ -678,7 +658,6 @@ section#stockists {
   background-image: url("../images/issue02/NICOTINE02BACKCOVER.jpg");
 }
 
-
 #issue03_img0 {
   background-image: url("../images/issue03/NICOTINE03COVER.jpg");
 }
@@ -774,8 +753,6 @@ section#stockists {
 #issue03_img23 {
   background-image: url("../images/issue03/NICOTINE21.jpg");
 }
-
-
 
 #issue04_img0 {
   background-image: url("../images/issue04/NICOTINE_COVER_1.jpg");
@@ -892,13 +869,6 @@ section#stockists {
 #issue04_img28 {
   background-image: url("../images/issue04/NICOTINEPREVIEW26_BACK_COVER.jpg");
 }
-
-
-
-
-
-
-
 
 #issue05_img0 {
   background-image: url("../images/issue05/frontcover01.jpg");
@@ -1069,7 +1039,6 @@ input[type="submit" i] {
   border: none;
 }
 
-
 #issue06_img0 {
   background-image: url("../images/issue06/frontcover01.jpg");
 }
@@ -1189,7 +1158,6 @@ input[type="submit" i] {
 #issue06_img29 {
   background-image: url("../images/issue06/NICOTINE06PREVIEW27.jpg");
 }
-
 
 #issue07_img0 {
   background-image: url("../images/issue07/frontcover01.jpg");
@@ -1339,11 +1307,6 @@ input[type="submit" i] {
   background-image: url("../images/issue07/backcover.jpg");
 }
 
-
-
-
-
-
 /*ISSUE 08 ----------------------------------------------------------------*/
 
 #issue08_img0 {
@@ -1484,7 +1447,6 @@ input[type="submit" i] {
 
 /*ISSUE 09 ----------------------------------------------------------------*/
 
-
 #issue09_img0 {
   background-image: url("../images/issue09/Current/CURRENT01.jpg");
 }
@@ -1613,17 +1575,12 @@ input[type="submit" i] {
   background-image: url("../images/issue09/Current/CURRENT31.jpg");
 } */
 
-
-
-
 .issue-cost {
   padding: 2px 14px;
   margin: 0;
 }
 
 /*/////////////   MEDIA QUERIES  ////////////////*/
-
-
 
 /* small browsers */
 @media only screen and (min-width: 568px) and (max-width: 653px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -1668,16 +1625,10 @@ input[type="submit" i] {
   div#description {
     font-size: 83%;
   }
-
-
-
 }
 
-
-
-
 /* ----------- smaller WIDTH browsers ----------- */
-@media only screen and (min-width: 320px) and (max-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   body {
     width: 95%;
   }
@@ -1691,15 +1642,14 @@ input[type="submit" i] {
     display: none;
   }
 
-
   div#navbar-ipad {
     display: block;
     margin-top: 5%;
   }
 
   ul {
-    -webkit-margin-before: .5em;
-    -webkit-margin-after: .5em;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
   }
 
   ul li#logo {
@@ -1763,10 +1713,7 @@ input[type="submit" i] {
   section#stockists {
     margin-top: 8%;
     font-size: 57%;
-
   }
-
-
 
   .slider-image {
     background-position: 50% 25%;
@@ -1808,7 +1755,6 @@ input[type="submit" i] {
     height: 20em;
   }
 
-
   .shop {
     display: flex;
     display: -webkit-box;
@@ -1821,7 +1767,6 @@ input[type="submit" i] {
     align-items: center;
     margin-bottom: 3em;
   }
-
 
   /* #shop-left {
       left: 0; 
@@ -1839,15 +1784,11 @@ input[type="submit" i] {
   }
 }
 
-@media only screen and (min-width: 520px) and (max-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 520px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .story {
     top: 115%;
   }
 }
-
-
-
-
 
 @media only screen and (min-width: 569px) and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
@@ -1885,7 +1826,6 @@ input[type="submit" i] {
   .shop-image {
     width: 58em;
   }
-
 }
 
 @media only screen and (min-width: 801px) and (max-width: 899px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -1911,9 +1851,6 @@ input[type="submit" i] {
   div.banner img.celine {
     margin-top: 4em;
   }
-
-
-
 }
 
 @media only screen and (min-width: 568px) and (max-width: 801px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -1922,7 +1859,7 @@ input[type="submit" i] {
   }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1150px)and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 900px) and (max-width: 1150px) and (-webkit-min-device-pixel-ratio: 2) {
   body {
     width: 65%;
   }
@@ -1957,10 +1894,9 @@ input[type="submit" i] {
     width: 100%;
     left: 0;
   }
-
 }
 
-@media only screen and (min-width: 1151px) and (max-width: 1250px)and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: 1151px) and (max-width: 1250px) and (-webkit-min-device-pixel-ratio: 1) {
   .story {
     top: 117%;
   }
@@ -1977,9 +1913,6 @@ input[type="submit" i] {
   .slider-image {
     height: 28em;
   }
-
-
-
 }
 
 /* X-LARGE SCREENS*/
@@ -1987,15 +1920,10 @@ input[type="submit" i] {
   section#stockists {
     padding-top: 0%;
   }
-
 }
 
-
-
-
-
 /* iphone Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   body {
     width: 95%;
   }
@@ -2026,8 +1954,8 @@ input[type="submit" i] {
   }
 
   ul {
-    -webkit-margin-before: .5em;
-    -webkit-margin-after: .5em;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
   }
 
   ul li#logo {
@@ -2103,7 +2031,6 @@ input[type="submit" i] {
     padding-top: 0%;
   }
 
-
   .slider-image {
     background-position: 50% 25%;
     height: 20em;
@@ -2152,9 +2079,6 @@ input[type="submit" i] {
   .banner img.celine {
     margin-top: 0em;
   }
-
-
-
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
@@ -2181,7 +2105,6 @@ input[type="submit" i] {
     width: 100%;
     position: static;
   }
-
 
   #story_image_1 {
     margin-left: auto;
@@ -2217,8 +2140,6 @@ input[type="submit" i] {
   .custom-video-controls {
     z-index: 2147483647;
   }
-
-
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
@@ -2298,7 +2219,7 @@ input[type="submit" i] {
     bottom: 40px;
   }
 
-  - *::-webkit-media-controls-start-playback-button {
+  *::-webkit-media-controls-start-playback-button {
     display: none !important;
     -webkit-appearance: none;
     opacity: 0;
@@ -2312,7 +2233,6 @@ input[type="submit" i] {
   .bottom-align {
     left: 0%;
   }
-
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
@@ -2335,7 +2255,7 @@ input[type="submit" i] {
 
 /*safari hacks*/
 
-@media \\0 screen and (min-width: 320px) and (max-width: 568px) {
+@media screen and (min-width: 320px) and (max-width: 568px) {
   .story {
     top: 105%;
   }
