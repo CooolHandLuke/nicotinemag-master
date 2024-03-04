@@ -6,40 +6,54 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108012904-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'UA-108012904-1');
+    gtag("config", "UA-108012904-1");
   </script>
   <!-- Facebook Pixel Code -->
   <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
       };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '813125702181721');
-    fbq('track', 'PageView');
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "813125702181721");
+    fbq("track", "PageView");
   </script>
   <noscript>
     <img height="1" width="1" src="https://www.facebook.com/tr?id=813125702181721&ev=PageView
     &noscript=1" />
   </noscript>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-  <meta name="description" content="nicotine is a biannual fashion and art magazine based in new york">
+  <!-- End Facebook Pixel Code -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="nicotine is a biannual fashion and art magazine based in new york" />
   <title>NicOtiNe</title>
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css" />
   <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 </head>
 
@@ -113,9 +127,15 @@
       <div class="slide slider-image" id="issue10_img31" onclick="$('.slider').slick('slickGoTo', 32);"></div>
       <div class="slide slider-image" id="issue10_img32" onclick="$('.slider').slick('slickGoTo', 33);"></div>
       <div class="slide slider-image" id="issue10_img33" onclick="$('.slider').slick('slickGoTo', 34);"></div>
-
     </div>
   </div>
+  <!-- [PLACEHOLDER UNTIL RIGHT LINK IS AVAILABLE] -->
+  <section id="buy" class="bottom-center">
+    <a href="https://flikthru.co.uk/products/nicotine-issue-10" role="button" target="_blank" rel="noopener">
+      <p class="issue-cost">$25 USD</p>
+      PRE-ORDER NOW
+    </a>
+  </section>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript"
