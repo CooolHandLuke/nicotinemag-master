@@ -1965,7 +1965,9 @@ input[type="submit" i] {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
   }
-
+  #about p {
+    padding-top: 100px;
+  }
   section#current {
     margin-top: 8%;
   }
