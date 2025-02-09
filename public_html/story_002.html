@@ -1,152 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-108012904-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-108012904-1");
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "813125702181721");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=813125702181721&ev=PageView
+    &noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="nicotine is a biannual fashion and art magazine based in new york"
+    />
+    <title>NicOtiNe</title>
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108012904-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "UA-108012904-1");
-  </script>
-  <!-- Facebook Pixel Code -->
-  <script>
-    !(function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod
-          ? n.callMethod.apply(n, arguments)
-          : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = "2.0";
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    })(
-      window,
-      document,
-      "script",
-      "https://connect.facebook.net/en_US/fbevents.js"
-    );
-    fbq("init", "813125702181721");
-    fbq("track", "PageView");
-  </script>
-  <noscript>
-    <img height="1" width="1" src="https://www.facebook.com/tr?id=813125702181721&ev=PageView
-    &noscript=1" />
-  </noscript>
-  <!-- End Facebook Pixel Code -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-  <meta name="description" content="nicotine is a biannual fashion and art magazine based in new york" />
-  <title>NicOtiNe</title>
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <div id="navbar-ipad">
-    <ul>
-      <a href="index.html">
-        <li id="logo-ipad">NicOtiNe</li>
-      </a>
-    </ul>
-  </div>
-  <div id="navbar">
-    <ul class="flex">
-      <a href="about.html">
-        <li class="nav">about</li>
-      </a>
-      <a href="current.html">
-        <li class="nav">current</li>
-      </a>
-      <a href="digital.html">
-        <li class="nav">digital</li>
-      </a>
-      <a href="index.html" id="homepage">
-        <li id="logo">NicOtiNe</li>
-      </a>
-      <a href="shop.html">
-        <li class="nav">shop</li>
-      </a>
-      <a href="stockists.html">
-        <li class="nav">stockists</li>
-      </a>
-      <a href="contact.html">
-        <li class="nav">contact</li>
-      </a>
-    </ul>
-  </div>
-  <section class="story-menu">
-    <div class="flex">
-      <!-- 1st digital story -->
-      <a href="story_001.html" class="slice" id="digital1"></a>
-      <!-- 2nd digital story  -->
-      <a href="story_002.html" class="slice" id="digital2"></a>
-      <!-- 3rd digital story  -->
-      <a href="story_003.html" class="slice" id="digital3"></a>
-      <!-- 4th digital story  -->
-      <a href="story_004.html" class="slice" id="digital4"></a>
+  <body>
+    <div id="navbar-ipad">
+      <ul>
+        <a href="index.html">
+          <li id="logo-ipad">NicOtiNe</li>
+        </a>
+      </ul>
     </div>
-  </section>
-  <div class="story">
-    <div id="info">
-      <p class="profile underline italic">FASHION STORY</p>
-      <p class="profile">A Day’s Dream</p>
-      <p class="profile">Photography by</p>
-      <p class="profile">Yuji Watanabe</p>
+    <div id="navbar">
+      <ul class="flex">
+        <a href="about.html">
+          <li class="nav">about</li>
+        </a>
+        <a href="current.html">
+          <li class="nav">current</li>
+        </a>
+        <a href="digital.html">
+          <li class="nav">digital</li>
+        </a>
+        <a href="index.html" id="homepage">
+          <li id="logo">NicOtiNe</li>
+        </a>
+        <a href="shop.html">
+          <li class="nav">shop</li>
+        </a>
+        <a href="stockists.html">
+          <li class="nav">stockists</li>
+        </a>
+        <a href="contact.html">
+          <li class="nav">contact</li>
+        </a>
+      </ul>
     </div>
-    <div class="margin">
-      <img class="full-width-story-image" src="images/digital/02/Watanabe_Layout_01.jpg" />
-      <img class="full-width-story-image" src="images/digital/02/Watanabe_Layout_02.jpg" />
-      <img class="full-width-story-image" src="images/digital/02/Watanabe_Layout_03.jpg" />
-      <img class="full-width-story-image" src="images/digital/02/Watanabe_Layout_04.jpg" />
-      <img class="full-width-story-image" src="images/digital/02/Watanabe_Layout_05.jpg" />
-    </div>
-    <!-- <div class="margin">
+    <section class="story-menu">
+      <div class="flex">
+        <!-- 1st digital story -->
+        <a href="story_001.html" class="slice" id="digital1"></a>
+        <!-- 2nd digital story  -->
+        <a href="story_002.html" class="slice" id="digital2"></a>
+        <!-- 3rd digital story  -->
+        <a href="story_003.html" class="slice" id="digital3"></a>
+        <!-- 4th digital story  -->
+        <a href="story_004.html" class="slice" id="digital4"></a>
+      </div>
+    </section>
+    <div class="story">
+      <div id="info">
+        <p class="profile underline italic">PHOTO ESSAY</p>
+        <p class="profile">Bison</p>
+        <p class="profile">Photography by</p>
+        <p class="profile">Jeremi Durand</p>
+      </div>
+      <div class="margin">
+        <img
+          class="full-width-story-image"
+          src="images/digital/02/Durand_01.jpg"
+        />
+        <img
+          class="full-width-story-image"
+          src="images/digital/02/Durand_02.jpg"
+        />
+        <img
+          class="full-width-story-image"
+          src="images/digital/02/Durand_03.jpg"
+        />
+        <img
+          class="full-width-story-image"
+          src="images/digital/02/Durand_04.jpg"
+        />
+        <img
+          class="full-width-story-image"
+          src="images/digital/02/Durand_05.jpg"
+        />
+        <img
+          class="full-width-story-image"
+          src="images/digital/02/Durand_06.jpg"
+        />
+      </div>
+      <!-- <div class="margin">
       <img class="full-width-story-image" src="images/digital/August_2023_Bundle/02/Wesolowska_01.jpg" />
     </div> -->
 
-    <div class="margin">
-      <p class="text credits">Styling: Yuri Nosho</p>
-      <p class="text credits">Hair: Hirokazu Endo</p>
-      <p class="text credits">Make-Up: Anna Misawa</p>
-      <p class="text credits">Flower: Mariyo Fukuda</p>
-      <p class="text credits">Model: Jeanna Razmologova for West Management</p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <div class="margin">
+        <p class="text credits">
+          Talent: Jeremy Fugerol, 2024 European Champion in Classic Bodybuilding
+        </p>
+        <p class="text credits">Light Director: Sam Meridja</p>
+        <p class="text credits">Styling: Chiron Maxi Min</p>
+        <p class="text credits">Makeup: Marion Delabre</p>
+        <p class="text credits">Set Design: Paul Vervach</p>
+        <p class="text credits">Production: Grinta Films</p>
+        <p class="text credits">Retouching: One Hundred Berlin</p>
+        <p class="text credits">
+          All Shot on Fujifilm GFX 50sii, medium format
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
-      <!-- <br />
+        <!-- <br />
           <br />
           <br /> -->
-      <!-- <p class="text credits" style="font-style: italic">
+        <!-- <p class="text credits" style="font-style: italic">
             All images courtesy of Jennifer Latour.
           </p> -->
-      <!-- <p class="text credits"><a class="story-link" href="https://www.instagram.com/apocstore">@apocstore</a> / <a class="story-link" href="https://apoc-store.com">www.apoc-store.com</a></p> -->
-      <!-- <br />
+        <!-- <p class="text credits"><a class="story-link" href="https://www.instagram.com/apocstore">@apocstore</a> / <a class="story-link" href="https://apoc-store.com">www.apoc-store.com</a></p> -->
+        <!-- <br />
             <br />
             <br />
             <br />
             <br /> -->
+      </div>
     </div>
-  </div>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
-  <script src="https://player.vimeo.com/api/player.js"></script>
-</body>
-
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+  </body>
 </html>
