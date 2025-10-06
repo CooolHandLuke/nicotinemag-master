@@ -324,22 +324,22 @@ input[type="submit"] {
 }
 
 #digital1 {
-  background-image: url("../images/digital/Slices/01.jpg");
+  background-image: url("../images/digital/Slices/slice_01.jpg");
   margin-right: 4%;
 }
 
 #digital2 {
-  background-image: url("../images/digital/Slices/02.jpg");
+  background-image: url("../images/digital/Slices/slice_02.jpg");
   margin-right: 4%;
 }
 
 #digital3 {
-  background-image: url("../images/digital/Slices/03.jpg");
+  background-image: url("../images/digital/Slices/slice_03.jpg");
   margin-right: 4%;
 }
 
 #digital4 {
-  background-image: url("../images/digital/Slices/04.jpg");
+  background-image: url("../images/digital/Slices/slice_04.jpg");
 }
 
 .story {

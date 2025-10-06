@@ -118,54 +118,194 @@
     </section>
     <div class="story">
       <div id="info">
-        <p class="profile underline italic">PHOTO ESSAY</p>
-        <p class="profile">Bison</p>
-        <p class="profile">Photography by</p>
-        <p class="profile">Jeremi Durand</p>
+        <p class="profile underline italic">ARTIST FEATURE</p>
+        <p class="profile">Littered MVMNTS</p>
+        <p class="profile">Works by</p>
+        <p class="profile">Shoji Yamasaki</p>
       </div>
       <div class="margin">
-        <img
-          class="full-width-story-image"
-          src="images/digital/02/Durand_01.jpg"
-        />
-        <img
-          class="full-width-story-image"
-          src="images/digital/02/Durand_02.jpg"
-        />
-        <img
-          class="full-width-story-image"
-          src="images/digital/02/Durand_03.jpg"
-        />
-        <img
-          class="full-width-story-image"
-          src="images/digital/02/Durand_04.jpg"
-        />
-        <img
-          class="full-width-story-image"
-          src="images/digital/02/Durand_05.jpg"
-        />
-        <img
-          class="full-width-story-image"
-          src="images/digital/02/Durand_06.jpg"
-        />
+        <video
+          class="full-width-story-image video-scroll"
+          src="images/digital/02/01_Uncrustables Wrapper.mp4"
+          muted
+          loop
+          style="
+            width: 100%;
+            height: auto;
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
+          "
+        >
+          <div
+            class="video-controls"
+            style="
+              position: absolute;
+              bottom: 10px;
+              left: 10px;
+              right: 10px;
+              opacity: 0;
+              transition: opacity 0.3s ease;
+              background: rgba(0, 0, 0, 0.5);
+              border-radius: 5px;
+              padding: 10px;
+            "
+          ></div>
+        </video>
+        <video
+          class="full-width-story-image video-scroll"
+          src="images/digital/02/02_Ripped White Paper Bag with Receipt.mp4"
+          muted
+          loop
+          style="
+            width: 100%;
+            height: auto;
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
+          "
+        >
+          <div
+            class="video-controls"
+            style="
+              position: absolute;
+              bottom: 10px;
+              left: 10px;
+              right: 10px;
+              opacity: 0;
+              transition: opacity 0.3s ease;
+              background: rgba(0, 0, 0, 0.5);
+              border-radius: 5px;
+              padding: 10px;
+            "
+          ></div>
+        </video>
+        <video
+          class="full-width-story-image video-scroll"
+          src="images/digital/02/03_Clif Kid Zbar Protein Bar Chocolate Mint.mp4"
+          muted
+          loop
+          style="
+            width: 100%;
+            height: auto;
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
+            position: relative;
+          "
+        >
+          <div
+            class="video-controls"
+            style="
+              position: absolute;
+              bottom: 10px;
+              left: 10px;
+              right: 10px;
+              opacity: 0;
+              transition: opacity 0.3s ease;
+              background: rgba(0, 0, 0, 0.5);
+              border-radius: 5px;
+              padding: 10px;
+            "
+          ></div>
+        </video>
       </div>
+
+      <style>
+        .video-scroll {
+          position: relative;
+        }
+
+        .video-scroll:hover {
+          cursor: pointer;
+        }
+
+        .video-scroll:hover::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.1);
+          pointer-events: none;
+        }
+
+        .video-scroll:hover .video-controls,
+        .video-scroll:focus .video-controls {
+          opacity: 1;
+        }
+      </style>
+
+      <script>
+        // Intersection Observer for video playback based on viewport position
+        const observerOptions = {
+          root: null,
+          rootMargin: "-25% 0px -25% 0px", // Video plays when 50% is visible in center
+          threshold: 0.5,
+        };
+
+        const videoObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+              video.play();
+            } else {
+              video.pause();
+            }
+          });
+        }, observerOptions);
+
+        // Observe all videos with the video-scroll class
+        document.querySelectorAll(".video-scroll").forEach((video) => {
+          videoObserver.observe(video);
+
+          // Add click to play/pause functionality
+          video.addEventListener("click", () => {
+            if (video.paused) {
+              video.play();
+            } else {
+              video.pause();
+            }
+          });
+        });
+      </script>
       <!-- <div class="margin">
       <img class="full-width-story-image" src="images/digital/August_2023_Bundle/02/Wesolowska_01.jpg" />
     </div> -->
 
       <div class="margin">
+        
         <p class="text credits">
-          Talent: Jeremy Fugerol, 2024 European Champion in Classic Bodybuilding
+          Littered MVMNTS is a split-screen video series comprised of found
+          pieces of litter paired with performer, Shoji Yamasaki, mimicking its
+          costume and movements. This project intersects with various themes
+          surrounding value. While beliefs about the value of objects differs
+          between people, cultures, and time, the production of trash unites the
+          human race. We have stepped into an era where we must all learn how to
+          coexist with man-made waste.
         </p>
-        <p class="text credits">Light Director: Sam Meridja</p>
-        <p class="text credits">Styling: Chiron Maxi Min</p>
-        <p class="text credits">Makeup: Marion Delabre</p>
-        <p class="text credits">Set Design: Paul Vervach</p>
-        <p class="text credits">Production: Grinta Films</p>
-        <p class="text credits">Retouching: One Hundred Berlin</p>
+        <br />
         <p class="text credits">
-          All Shot on Fujifilm GFX 50sii, medium format
+          Set in the natural soundscape of where the litter was found, the
+          ‘dancing debris’ acts as a form of silent protest to consumer culture
+          and the lack of care given to the environment. By shifting the
+          viewer’s perspective on litter, Yamasaki hopes to contribute to a
+          cultural shift where environmental responsibility is prioritized and
+          becomes an intrinsic value for those living on the sole planet we call
+          home.
         </p>
+        <br />
+        <p class="text credits">
+          Shoji Yamasaki is a first-generation Japanese American
+          transdisciplinary creative, born and raised in the unceded ancestral
+          land of Gabrielino-Tongva, recently known as Los Angeles. He creates
+          site-responsive and immersive works that explore the history,
+          architecture, and community that inhabit a space. His continual desire
+          for expansion as an artist and his experimental ideas have allowed him
+          to take on roles of a choreographer, dancer, performance artist,
+          director, writer, and filmmaker. His on-going project, Littered
+          MVMNTS, has connected with millions of viewers around the world
+          through social media. 
+        </p>
+
         <br />
         <br />
         <br />
