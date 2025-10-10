@@ -122,12 +122,15 @@
           src="images/digital/01/impede3.mov" 
           autoplay
           loop
-          style="width: 100%; height: auto; margin-bottom: 40px; opacity: 0; transition: opacity 2s ease-in-out;"
+          playsinline
+          webkit-playsinline
+          style="width: 100%; height: auto; margin-bottom: 40px; opacity: 0; transition: opacity 2s ease-in-out; cursor: pointer;"
           onloadeddata="this.style.opacity = '1'; attemptAutoplayWithSound();"
           onmouseover="showButton()"
           onmouseout="hideButtonImmediately()"
           ontouchstart="showButton()"
           ontouchend="hideButtonImmediately()"
+          onclick="handleVideoClick(event)"
         >
           Your browser does not support the video tag.
         </video>
@@ -178,6 +181,13 @@
       let soundEnabled = false;
       let hideTimeout;
       
+      function handleVideoClick(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        toggleMute();
+        return false;
+      }
+      
       function attemptAutoplayWithSound() {
         const video = document.getElementById('videoPlayer');
         video.muted = false;
@@ -224,9 +234,6 @@
           video.muted = true;
           button.innerHTML = 'UNMUTE';
         }
-        
-        showButton();
-        hideButtonAfterDelay();
       }
     </script>
 </body>
