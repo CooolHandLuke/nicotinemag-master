@@ -125,154 +125,35 @@
       </div>
       <div class="margin">
         <video
-          class="full-width-story-image video-scroll"
+          class="full-width-story-image"
           src="images/digital/02/01_Uncrustables Wrapper (1).mov"
+          autoplay
           muted
           loop
-          style="
-            width: 80%;
-            height: auto;
-            margin: 0 auto 30% auto;
-            display: block;
-            transition: transform 0.3s ease;
-          "
-        >
-          <div
-            class="video-controls"
-            style="
-              position: absolute;
-              bottom: 10px;
-              left: 10px;
-              right: 10px;
-              opacity: 0;
-              transition: opacity 0.3s ease;
-              background: rgba(0, 0, 0, 0.5);
-              border-radius: 5px;
-              padding: 10px;
-            "
-          ></div>
-        </video>
+          playsinline
+          style="width: 100%; height: auto; margin-bottom: 40px"
+        ></video>
+
         <video
-          class="full-width-story-image video-scroll"
+          class="full-width-story-image"
           src="images/digital/02/02_Ripped White Paper Bag with Receipt (1).mov"
+          autoplay
           muted
           loop
-          style="
-            width: 80%;
-            height: auto;
-            margin: 0 auto 30% auto;
-            display: block;
-            transition: transform 0.3s ease;
-          "
-        >
-          <div
-            class="video-controls"
-            style="
-              position: absolute;
-              bottom: 10px;
-              left: 10px;
-              right: 10px;
-              opacity: 0;
-              transition: opacity 0.3s ease;
-              background: rgba(0, 0, 0, 0.5);
-              border-radius: 5px;
-              padding: 10px;
-            "
-          ></div>
-        </video>
+          playsinline
+          style="width: 100%; height: auto; margin-bottom: 40px"
+        ></video>
+
         <video
-          class="full-width-story-image video-scroll"
+          class="full-width-story-image"
           src="images/digital/02/03_Clif Kid Zbar Protein Bar Chocolate Mint (1).mov"
+          autoplay
           muted
           loop
-          style="
-            width: 80%;
-            height: auto;
-            margin: 0 auto 15% auto;
-            display: block;
-            transition: transform 0.3s ease;
-            position: relative;
-          "
-        >
-          <div
-            class="video-controls"
-            style="
-              position: absolute;
-              bottom: 10px;
-              left: 10px;
-              right: 10px;
-              opacity: 0;
-              transition: opacity 0.3s ease;
-              background: rgba(0, 0, 0, 0.5);
-              border-radius: 5px;
-              padding: 10px;
-            "
-          ></div>
-        </video>
+          playsinline
+          style="width: 100%; height: auto; margin-bottom: 40px"
+        ></video>
       </div>
-
-      <style>
-        .video-scroll {
-          position: relative;
-        }
-
-        .video-scroll:hover {
-          cursor: pointer;
-        }
-
-        .video-scroll:hover::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: rgba(0, 0, 0, 0.1);
-          pointer-events: none;
-        }
-
-        .video-scroll:hover .video-controls,
-        .video-scroll:focus .video-controls {
-          opacity: 1;
-        }
-      </style>
-
-      <script>
-        // Intersection Observer for video playback based on viewport position
-        const observerOptions = {
-          root: null,
-          rootMargin: "-25% 0px -25% 0px", // Video plays when 50% is visible in center
-          threshold: 0.5,
-        };
-
-        const videoObserver = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            const video = entry.target;
-            if (entry.isIntersecting) {
-              video.play();
-            } else {
-              video.pause();
-            }
-          });
-        }, observerOptions);
-
-        // Observe all videos with the video-scroll class
-        document.querySelectorAll(".video-scroll").forEach((video) => {
-          videoObserver.observe(video);
-
-          // Add click to play/pause functionality
-          video.addEventListener("click", () => {
-            if (video.paused) {
-              video.play();
-            } else {
-              video.pause();
-            }
-          });
-        });
-      </script>
-      <!-- <div class="margin">
-      <img class="full-width-story-image" src="images/digital/August_2023_Bundle/02/Wesolowska_01.jpg" />
-    </div> -->
 
       <div class="margin">
         <p class="text credits">
