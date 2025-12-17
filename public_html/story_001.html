@@ -96,146 +96,164 @@
 
   <div class="story">
     <div id="info">
-      <p class="italic underline profile">NICOTINE LIKES</p>
-      <p class="profile">Prelude to a Dying Star</p>
-      <p class="profile">Sounds by</p>
-      <p class="profile">The Triangular</p>
+      <p class="italic underline profile">FASHION FEATURE</p>
+      <p class="profile">Royal Pine</p>
+      <p class="profile">Photography by</p>
+      <p class="profile">Zoey Jacqueline</p>
     </div>
     <div class="margin">
-      <img class="full-width-story-image" src="images/digital/01/TheTriangular.jpg" />
+      <img class="full-width-story-image" src="images/digital/01/Jacqueline_Layout_01.jpg" />
+    </div>
+   <div class="margin">
+      <img class="full-width-story-image" src="images/digital/01/Jacqueline_Layout_02.jpg" />
     </div>
     <div class="margin">
-      <!-- OPTION 3: Minimal Styled Link -->
-      <div style="text-align: center; margin: 60px 0 60px 0; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-        <p style="margin: 0 0 15px 0; font-size: 12px; color: #666; letter-spacing: 1px;">PRELUDE TO A DYING STAR</p>
-        <a href="https://open.spotify.com/album/1OPhwOQ6OtwC2WEbpZOXXe" target="_blank" style="text-decoration: none; color: #1db954; font-weight: bold; font-size: 14px; letter-spacing: 1px; transition: color 0.3s;">
-          ► LISTEN ON SPOTIFY
-        </a>
+      <img class="full-width-story-image" src="images/digital/01/Jacqueline_Layout_03.jpg" />
+    </div>
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/01/Jacqueline_Layout_04.jpg" />
+    </div>
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/01/Jacqueline_Layout_05.jpg" />
+    </div>
+    <div class="margin">
+      
+      <div class="margin">
+        <br>
+        <p class="text credits">Styling: Bella Purse</p>
+        <p class="text credits">Hair: Mia Haruka Miyashita</p>
+        <p class="text credits">Makeup: Sayaka Gushi </p>
+        <p class="text credits">Models: Bella Howe & Taya Kuchinskaya</p>
+        <p class="text credits">Styling Assistant: Maia Burt</p>
+        
+        
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
       </div>
-    </div>
-
-    <div class="margin">
-      <div style="position: relative; display: inline-block; width: 100%;">
-        <video 
-          id="videoPlayer"
-          class="full-width-story-image video-fade-in" 
-          src="images/digital/01/impede3.mov" 
-          autoplay
-          loop
-          playsinline
-          webkit-playsinline
-          style="width: 100%; height: auto; margin-bottom: 40px; opacity: 0; transition: opacity 2s ease-in-out; cursor: pointer;"
-          onloadeddata="this.style.opacity = '1'; attemptAutoplayWithSound();"
-          onmouseover="showButton()"
-          onmouseout="hideButtonImmediately()"
-          ontouchstart="showButton()"
-          ontouchend="hideButtonImmediately()"
-          onclick="handleVideoClick(event)"
-        >
-          Your browser does not support the video tag.
-        </video>
-        <button 
-          id="muteButton"
-          onclick="toggleMute()"
-          style="
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: rgba(0, 0, 0, 0.7);
-            color: rgba(255, 255, 255, 0.9);
-            border: 1px solid rgba(0, 0, 0, 0.8);
-            border-radius: 3px;
-            width: auto;
-            height: auto;
-            padding: 6px 10px;
-            cursor: pointer;
-            font-size: 11px;
-            font-weight: 300;
-            letter-spacing: 0.5px;
-            z-index: 10;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-          "
-          onmouseover="this.style.background = 'rgba(0, 0, 0, 0.9)'; this.style.color = 'rgba(255, 255, 255, 1)'"
-          onmouseout="this.style.background = 'rgba(0, 0, 0, 0.7)'; this.style.color = 'rgba(255, 255, 255, 0.9)'"
-        >
-          UNMUTE
-        </button>
-      </div>
-    </div>
-
-    <div class="margin">
-      <br>
-      <p class="text credits">Prelude to a Dying Star is a collection of aural landscapes that depict the metaphorical and non-linear passage of time before it arrives at a supernova. This is a debut EP for The Triangular, an entity found to be based in Brooklyn, New York.</p>
-
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    </div>
-
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
-    <script>
-      let soundEnabled = false;
-      let hideTimeout;
       
-      function handleVideoClick(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        toggleMute();
-        return false;
-      }
-      
-      function attemptAutoplayWithSound() {
-        const video = document.getElementById('videoPlayer');
-        video.muted = false;
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+      <script>
+        let soundEnabled = false;
+        let hideTimeout;
         
-        video.play().catch(() => {
-          // If autoplay with sound fails, fallback to muted
-          video.muted = true;
-          video.play();
-          document.getElementById('muteButton').innerHTML = 'UNMUTE';
-        });
-        
-        // Hide button after 4 seconds
-        hideButtonAfterDelay();
-      }
-      
-      function hideButtonAfterDelay() {
-        const button = document.getElementById('muteButton');
-        clearTimeout(hideTimeout);
-        hideTimeout = setTimeout(() => {
-          button.style.opacity = '0';
-        }, 4000);
-      }
-      
-      function hideButtonImmediately() {
-        const button = document.getElementById('muteButton');
-        clearTimeout(hideTimeout);
-        button.style.opacity = '0';
-      }
-      
-      function showButton() {
-        const button = document.getElementById('muteButton');
-        button.style.opacity = '1';
-        clearTimeout(hideTimeout);
-      }
-      
-      function toggleMute() {
-        const video = document.getElementById('videoPlayer');
-        const button = document.getElementById('muteButton');
-        
-        if (video.muted) {
-          video.muted = false;
-          button.innerHTML = 'MUTE';
-        } else {
-          video.muted = true;
-          button.innerHTML = 'UNMUTE';
+        function handleVideoClick(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          toggleMute();
+          return false;
         }
-      }
-    </script>
+        
+        function attemptAutoplayWithSound() {
+          const video = document.getElementById('videoPlayer');
+          video.muted = false;
+          
+          video.play().catch(() => {
+            // If autoplay with sound fails, fallback to muted
+            video.muted = true;
+            video.play();
+            document.getElementById('muteButton').innerHTML = 'UNMUTE';
+          });
+          
+          // Hide button after 4 seconds
+          hideButtonAfterDelay();
+        }
+        
+        function hideButtonAfterDelay() {
+          const button = document.getElementById('muteButton');
+          clearTimeout(hideTimeout);
+          hideTimeout = setTimeout(() => {
+            button.style.opacity = '0';
+          }, 4000);
+        }
+        
+        function hideButtonImmediately() {
+          const button = document.getElementById('muteButton');
+          clearTimeout(hideTimeout);
+          button.style.opacity = '0';
+        }
+        
+        function showButton() {
+          const button = document.getElementById('muteButton');
+          button.style.opacity = '1';
+          clearTimeout(hideTimeout);
+        }
+        
+        function toggleMute() {
+          const video = document.getElementById('videoPlayer');
+          const button = document.getElementById('muteButton');
+          
+          if (video.muted) {
+            video.muted = false;
+            button.innerHTML = 'MUTE';
+          } else {
+            video.muted = true;
+            button.innerHTML = 'UNMUTE';
+          }
+        }
+        </script>
 </body>
 
 </html>
+<!-- <div class="margin">
+
+  <div style="text-align: center; margin: 60px 0 60px 0; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+    <p style="margin: 0 0 15px 0; font-size: 12px; color: #666; letter-spacing: 1px;">PRELUDE TO A DYING STAR</p>
+    <a href="https://open.spotify.com/album/1OPhwOQ6OtwC2WEbpZOXXe" target="_blank" style="text-decoration: none; color: #1db954; font-weight: bold; font-size: 14px; letter-spacing: 1px; transition: color 0.3s;">
+      ► LISTEN ON SPOTIFY
+    </a>
+  </div>
+</div>
+
+<div class="margin">
+  <div style="position: relative; display: inline-block; width: 100%;">
+    <video 
+      id="videoPlayer"
+      class="full-width-story-image video-fade-in" 
+      src="images/digital/01/impede3.mov" 
+      autoplay
+      loop
+      playsinline
+      webkit-playsinline
+      style="width: 100%; height: auto; margin-bottom: 40px; opacity: 0; transition: opacity 2s ease-in-out; cursor: pointer;"
+      onloadeddata="this.style.opacity = '1'; attemptAutoplayWithSound();"
+      onmouseover="showButton()"
+      onmouseout="hideButtonImmediately()"
+      ontouchstart="showButton()"
+      ontouchend="hideButtonImmediately()"
+      onclick="handleVideoClick(event)"
+    >
+      Your browser does not support the video tag.
+    </video>
+    <button 
+      id="muteButton"
+      onclick="toggleMute()"
+      style="
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: rgba(0, 0, 0, 0.7);
+        color: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 3px;
+        width: auto;
+        height: auto;
+        padding: 6px 10px;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        z-index: 10;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+      "
+      onmouseover="this.style.background = 'rgba(0, 0, 0, 0.9)'; this.style.color = 'rgba(255, 255, 255, 1)'"
+      onmouseout="this.style.background = 'rgba(0, 0, 0, 0.7)'; this.style.color = 'rgba(255, 255, 255, 0.9)'"
+    >
+      UNMUTE
+    </button>
+  </div>
+</div> -->
