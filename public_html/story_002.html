@@ -1,165 +1,247 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-108012904-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-108012904-1");
-    </script>
-    <!-- Facebook Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js",
-      );
-      fbq("init", "813125702181721");
-      fbq("track", "PageView");
-    </script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        src="https://www.facebook.com/tr?id=813125702181721&ev=PageView
-    &noscript=1"
-      />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
-    />
-    <meta
-      name="description"
-      content="nicotine is a biannual fashion and art magazine based in new york"
-    />
-    <title>NicOtiNe</title>
-    <link
-      rel="stylesheet"
-      href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <div id="navbar-ipad">
-      <ul>
-        <a href="index.html">
-          <li id="logo-ipad">NicOtiNe</li>
-        </a>
-      </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108012904-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-108012904-1");
+  </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js",
+    );
+    fbq("init", "813125702181721");
+    fbq("track", "PageView");
+  </script>
+  <noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=813125702181721&ev=PageView
+    &noscript=1" />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="nicotine is a biannual fashion and art magazine based in new york" />
+  <title>NicOtiNe</title>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="navbar-ipad">
+    <ul>
+      <a href="index.html">
+        <li id="logo-ipad">NicOtiNe</li>
+      </a>
+    </ul>
+  </div>
+  <div id="navbar">
+    <ul class="flex">
+      <a href="about.html">
+        <li class="nav">about</li>
+      </a>
+      <a href="current.html">
+        <li class="nav">current</li>
+      </a>
+      <a href="digital.html">
+        <li class="nav">digital</li>
+      </a>
+      <a href="index.html" id="homepage">
+        <li id="logo">NicOtiNe</li>
+      </a>
+      <a href="shop.html">
+        <li class="nav">shop</li>
+      </a>
+      <a href="stockists.html">
+        <li class="nav">stockists</li>
+      </a>
+      <a href="contact.html">
+        <li class="nav">contact</li>
+      </a>
+    </ul>
+  </div>
+  <section class="story-menu">
+    <div class="flex">
+      <!-- 1st digital story -->
+      <a href="story_001.html" class="slice" id="digital1"></a>
+      <!-- 2nd digital story  -->
+      <a href="story_002.html" class="slice" id="digital2"></a>
+      <!-- 3rd digital story  -->
+      <a href="story_003.html" class="slice" id="digital3"></a>
+      <!-- 4th digital story  -->
+      <a href="story_004.html" class="slice" id="digital4"></a>
     </div>
-    <div id="navbar">
-      <ul class="flex">
-        <a href="about.html">
-          <li class="nav">about</li>
-        </a>
-        <a href="current.html">
-          <li class="nav">current</li>
-        </a>
-        <a href="digital.html">
-          <li class="nav">digital</li>
-        </a>
-        <a href="index.html" id="homepage">
-          <li id="logo">NicOtiNe</li>
-        </a>
-        <a href="shop.html">
-          <li class="nav">shop</li>
-        </a>
-        <a href="stockists.html">
-          <li class="nav">stockists</li>
-        </a>
-        <a href="contact.html">
-          <li class="nav">contact</li>
-        </a>
-      </ul>
+  </section>
+  <div class="story">
+    <div id="info">
+      <p class="profile underline italic">ARTIST FEATURE</p>
+      <p class="profile">Seat Assignment</p>
+      <p class="profile">Photography by</p>
+      <p class="profile">Nina Katchadourian</p>
     </div>
-    <section class="story-menu">
-      <div class="flex">
-        <!-- 1st digital story -->
-        <a href="story_001.html" class="slice" id="digital1"></a>
-        <!-- 2nd digital story  -->
-        <a href="story_002.html" class="slice" id="digital2"></a>
-        <!-- 3rd digital story  -->
-        <a href="story_003.html" class="slice" id="digital3"></a>
-        <!-- 4th digital story  -->
-        <a href="story_004.html" class="slice" id="digital4"></a>
-      </div>
-    </section>
-    <div class="story">
-      <div id="info">
-        <p class="profile underline italic">ARTIST FEATURE</p>
-        <p class="profile">Works</p>
-        <p class="profile">by</p>
-        <p class="profile">Raya Simpao</p>
-      </div>
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/02/ Nina Katchadourian_01.jpg" />
+    </div>
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/02/ Nina Katchadourian_02.jpg" />
+    </div>
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/02/ Nina Katchadourian_03.jpg" />
+    </div>
+
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/02/ Nina Katchadourian_04.jpg" />
+    </div>
+
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/02/ Nina Katchadourian_05.jpg" />
+    </div>
+
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/02/ Nina Katchadourian_06.jpg" />
+    </div>
+
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/02/ Nina Katchadourian_07.jpg" />
+    </div>
+
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/02/ Nina Katchadourian_08.jpg" />
+    </div>
+
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/02/ Nina Katchadourian_09.jpg" />
+    </div>
+
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/02/ Nina Katchadourian_10.jpg" />
+    </div>
+    <div class="margin">
+
+      <!-- start of parapraphs for august update -->
       <div class="margin">
-        <img
-          class="full-width-story-image"
-          src="images/digital/02/Simpao_Layout_01.jpg"
-        />
-      </div>
-      <div class="margin">
-        <img
-          class="full-width-story-image"
-          src="images/digital/02/Simpao_Layout_02.jpg"
-        />
-      </div>
-      <div class="margin">
-        <img
-          class="full-width-story-image"
-          src="images/digital/02/Simpao_Layout_03.jpg"
-        />
-      </div>
-      <div class="margin">
-        <img
-          class="full-width-story-image"
-          src="images/digital/02/Simpao_Layout_04.jpg"
-        />
-      </div>
-      <div class="margin">
-        <img
-          class="full-width-story-image"
-          src="images/digital/02/Simpao_Layout_05.jpg"
-        />
-      </div>
-      <div class="margin">
-        <img
-          class="full-width-story-image"
-          src="images/digital/02/Simpao_Layout_06.jpg"
-        />
+        <p class="text">
+          From 2010 to 2021, I faced a self-imposed challenge every time I took a flight: I had to make art by
+          improvising
+          with the available materials and document the results using only my cellphone.
+        </p>
+
+
+
+        <p class="text">
+          The project began spontaneously on a three-hour flight when contemplating the time ahead of me. It already
+          didn’t count; it was simply time to kill. That’s a terrible attitude, I thought, for an artist who advocates
+          for
+          the potential of what’s often overlooked. If I believed that, then something had to be possible even within
+          the
+          temporal, spatial, material, and social constraints of an airplane cabin.
+        </p>
+        <p class="text">
+          Most of “Seat Assignment” was made on my tray table, working with things like snacks, candy, leftovers from
+          the
+          airplane meals, in-flight magazines, sweater lint, isolated parts of my own body (especially fingers), my own
+          clothing, and materials discarded by other passengers. On some flights, I tried anything and everything; other
+          times, I limited myself severely. What can I do with a single cocktail napkin? Sometimes, I discovered new
+          techniques: for example, pressing a printed page up to the bright airplane window merges the image on one side
+          with the image on the other. Many photographs resulted from this chance collision. I quickly learned to build
+          images for the camera’s eye. A tiny situation on the tray table could become a vast space. Looking down at my
+          sweater, the phone revealed the face of a gorilla, but the person next to me saw only a passenger
+          photographing
+          a sweater in her lap. Over eleven years, only three people ever asked me what I was doing.
+        </p>
+        <p class="text">
+          My fellow passengers became my subject too. I could, for example, capture their image in the reflective belt
+          buckle in my lap.
+        </p>
+        <p class="text">
+          Sometimes—as carefully and tenderly as possible—I photographed my sleeping seatmate, moved by the intimacy of
+          falling asleep next to a stranger. I turned the camera on myself as well: once, I decided to make a costume in
+          the lavatory by putting a tissue-paper toilet seat cover over my head. The resulting picture reminded me of
+          fifteenth-century Flemish portraiture. On a subsequent flight from San Francisco to Auckland, I utilized the
+          fourteen-hour flight time—the lavatory was often empty and there was never a line—to make a series of
+          photographs called “Lavatory Self-Portraits in the Flemish Style.”
+        </p>
+        <p class="text">
+          Playful improvisation may drive the project, but "Seat Assignment" doesn’t exclude anxiety-provoking subjects
+          such as natural disasters, plane crashes, terrorism, and racial profiling. Sometimes, a spontaneous gesture
+          like
+          standing two wafer cookies on end that I only then recognized as the Twin Towers, underscored the pervasive
+          power of the mediatized image.
+        </p>
+
+
+
+        <p class="text">
+          “Seat Assignment” puts many of my own premises to the test. Is there always more than meets the eye? If I
+          can’t
+          be in my studio, can an airplane be my studio? Could a cellphone be a serious artistic tool that redoubles my
+          engagement with the world rather than distracting me from it? Can I make something out of nothing, working
+          under
+          conditions where art doesn’t seem likely or possible?
+        </p>
+        <p class="text">
+          <em>- Nina Katchadourian, Artist</em>
+        </p>
+        <br />
+        <p class="text">
+          A book entitled <em>Seat Assignment</em> is now available from <a href="https://primitivebooks.com/">Primitive
+            Books</a>. Hundreds of color images from the
+          eleven-year span of the project show how Katchadourian's process of persistent experimentation and
+          improvisation, alongside the commitment to play and rigor in combination, can produce unexpectedly beautiful
+          and
+          ingenious results. The book is available in Europe from Primitive Books directly, and in the US from <a
+            href="https://cclarkgallery.square.site/product/-nina-katchadourian-seat-assignment-primitive-books-/5QHSGHOFDYRYDY4NYSHXAVFO?cs=true&cst=custom">
+            Catharine
+            Clark Gallery</a>, San Francisco, or a <a href="https://www.printedmatter.org/programs/events/2271/">Printed
+            Matter</a>, New York.
+        </p>
+        <p class="text">
+          <a href="https://www.ninakatchadourian.com/projects">Nina Katchadourian</a> is an
+          interdisciplinary artist whose work includes video, performance, sound, sculpture,
+          photography and public projects. She lives between Berlin and Brooklyn.
+        </p>
       </div>
 
+      <!-- end of paragraphs for august update -->
+
+
+
+    </div>
+
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/02/ Nina Katchadourian_11.jpg" />
+    </div>
+
+    <!-- 
       <div class="margin">
         <p class="text credits">
           Raya Simpao is a Filipina artist, born and raised in Manila, currently
@@ -194,21 +276,21 @@
         <br />
         <br />
 
-        <!-- <br />
+        <br />
           <br />
           <br /> -->
-        <!-- <p class="text credits" style="font-style: italic">
+    <!-- <p class="text credits" style="font-style: italic">
             All images courtesy of Jennifer Latour.
           </p> -->
-        <!-- <p class="text credits"><a class="story-link" href="https://www.instagram.com/apocstore">@apocstore</a> / <a class="story-link" href="https://apoc-store.com">www.apoc-store.com</a></p> -->
-        <!-- <br />
+    <!-- <p class="text credits"><a class="story-link" href="https://www.instagram.com/apocstore">@apocstore</a> / <a class="story-link" href="https://apoc-store.com">www.apoc-store.com</a></p> -->
+    <!-- <br />
             <br />
             <br />
             <br />
             <br /> -->
-      </div>
-    </div>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
-    <script src="https://player.vimeo.com/api/player.js"></script>
-  </body>
+  </div>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+
 </html>

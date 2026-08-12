@@ -96,104 +96,123 @@
 
   <div class="story">
     <div id="info">
-      <p class="italic underline profile">FASHION FEATURE</p>
-      <p class="profile">A Study of Domestic Tales</p>
-      <p class="profile">Photography by</p>
-      <p class="profile">Zosia Prominska</p>
+      <p class="italic underline profile">NICOTINE</p>
+      <p class="profile">LIKES</p>
+      <p class="profile">Fondazione</p>
+      <p class="profile">Dries Van Noten</p>
     </div>
     <div class="margin">
-      <img class="full-width-story-image" src="images/digital/01/Prominska_Layout_01.jpg" />
-    </div>
-   <div class="margin">
-      <img class="full-width-story-image" src="images/digital/01/Prominska_Layout_02.jpg" />
+      <img class="full-width-story-image" src="images/digital/01/FDVN_01.jpg" />
     </div>
     <div class="margin">
-      <img class="full-width-story-image" src="images/digital/01/Prominska_Layout_03.jpg" />
+      <img class="full-width-story-image" src="images/digital/01/FDVN_02.jpg" />
     </div>
     <div class="margin">
-      <img class="full-width-story-image" src="images/digital/01/Prominska_Layout_04.jpg" />
+      <img class="full-width-story-image" src="images/digital/01/FDVN_03.jpg" />
     </div>
     <div class="margin">
-      <img class="full-width-story-image" src="images/digital/01/Prominska_Layout_05.jpg" />
+      <img class="full-width-story-image" src="images/digital/01/FDVN_04.jpg" />
     </div>
     <div class="margin">
-      
-      <div class="margin">
-        <br>
-        <p class="text credits">Styling: Petra Haller</p>
-        <p class="text credits">Hair & Makeup: Melanie Gutheinz</p>
-        <p class="text credits">Model: Annujin M.</p>
-     
-        
-        
-        
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-      </div>
-      
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
-      <script>
-        let soundEnabled = false;
-        let hideTimeout;
-        
-        function handleVideoClick(event) {
-          event.preventDefault();
-          event.stopPropagation();
-          toggleMute();
-          return false;
-        }
-        
-        function attemptAutoplayWithSound() {
-          const video = document.getElementById('videoPlayer');
-          video.muted = false;
-          
-          video.play().catch(() => {
-            // If autoplay with sound fails, fallback to muted
-            video.muted = true;
-            video.play();
-            document.getElementById('muteButton').innerHTML = 'UNMUTE';
-          });
-          
-          // Hide button after 4 seconds
-          hideButtonAfterDelay();
-        }
-        
-        function hideButtonAfterDelay() {
-          const button = document.getElementById('muteButton');
-          clearTimeout(hideTimeout);
-          hideTimeout = setTimeout(() => {
-            button.style.opacity = '0';
-          }, 4000);
-        }
-        
-        function hideButtonImmediately() {
-          const button = document.getElementById('muteButton');
-          clearTimeout(hideTimeout);
+      <img class="full-width-story-image" src="images/digital/01/FDVN_05.jpg" />
+    </div>
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/01/FDVN_06.jpg" />
+    </div>
+    <div class="margin">
+      <img class="full-width-story-image" src="images/digital/01/FDVN_07.jpg" />
+    </div>
+
+    <p class="text">Venice is a city shaped by water and imagination, a place where histories overlap, and
+      craftsmanship has long held the power to turn the ephemeral into the eternal. In this spirit, Fondazione Dries
+      Van Noten emerges as a new cultural and artistic landmark, rooted in the city’s history and committed to its
+      creative future.</p>
+
+    <p class="text">Housed within Palazzo Pisani Moretta, the Fondazione brings contemporary purpose to one of
+      Venice’s most storied palazzos. Centuries of craftsmanship serve as a backdrop for new dialogues: between
+      artworks and artisans, between past and present, and between local talent and international creativity. The
+      Fondazione reflects a belief in craftsmanship as an act of cultural identity, thinking with one’s hands, shaping
+      meaning through material, gesture, time, and space. It is a place for transition and transformation, where
+      traditions are not preserved in stillness but carried forward through continual reinvention.</p>
+
+    <p class="text">Currently on view at the Fondazione is <em>The Only True Protest Is Beauty</em>: a temporary
+      presentation exploring beauty as a charged encounter, capable of unsettling the familiar and
+      making space for the unexpected. Within the palazzo’s many winding rooms, craftsmanship engages emotion and
+      material inquiry in a constellation formed through mastery, set in dialogue with the historic architecture that
+      houses it.</p>
+
+    <p class="text">Curated by Dries Van Noten, <em>The Only True Protest Is Beauty</em> is on view at
+      Fondazione
+      Dries Van Noten from April 25 - October 4, 2026.</p>
+    <br>
+    <p class="text credits">Photography by Anna Sabatini</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+    <script>
+      let soundEnabled = false;
+      let hideTimeout;
+
+      function handleVideoClick(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        toggleMute();
+        return false;
+      }
+
+      function attemptAutoplayWithSound() {
+        const video = document.getElementById('videoPlayer');
+        video.muted = false;
+
+        video.play().catch(() => {
+          // If autoplay with sound fails, fallback to muted
+          video.muted = true;
+          video.play();
+          document.getElementById('muteButton').innerHTML = 'UNMUTE';
+        });
+
+        // Hide button after 4 seconds
+        hideButtonAfterDelay();
+      }
+
+      function hideButtonAfterDelay() {
+        const button = document.getElementById('muteButton');
+        clearTimeout(hideTimeout);
+        hideTimeout = setTimeout(() => {
           button.style.opacity = '0';
+        }, 4000);
+      }
+
+      function hideButtonImmediately() {
+        const button = document.getElementById('muteButton');
+        clearTimeout(hideTimeout);
+        button.style.opacity = '0';
+      }
+
+      function showButton() {
+        const button = document.getElementById('muteButton');
+        button.style.opacity = '1';
+        clearTimeout(hideTimeout);
+      }
+
+      function toggleMute() {
+        const video = document.getElementById('videoPlayer');
+        const button = document.getElementById('muteButton');
+
+        if (video.muted) {
+          video.muted = false;
+          button.innerHTML = 'MUTE';
+        } else {
+          video.muted = true;
+          button.innerHTML = 'UNMUTE';
         }
-        
-        function showButton() {
-          const button = document.getElementById('muteButton');
-          button.style.opacity = '1';
-          clearTimeout(hideTimeout);
-        }
-        
-        function toggleMute() {
-          const video = document.getElementById('videoPlayer');
-          const button = document.getElementById('muteButton');
-          
-          if (video.muted) {
-            video.muted = false;
-            button.innerHTML = 'MUTE';
-          } else {
-            video.muted = true;
-            button.innerHTML = 'UNMUTE';
-          }
-        }
-        </script>
+      }
+    </script>
 </body>
 
 </html>
