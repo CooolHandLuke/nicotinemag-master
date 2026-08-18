@@ -114,13 +114,31 @@
     <br>
 
     <div class="margin">
-      <div style="padding:56.25% 0 0 0;position:relative;"><iframe
-          src="https://player.vimeo.com/video/1034353259?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+      <div class="story04-video" style="padding:56.25% 0 0 0;position:relative;"><iframe id="story04Video"
+          src="https://player.vimeo.com/video/1034353259?autoplay=1&amp;muted=1&amp;controls=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           style="position:absolute;top:0;left:0;width:100%;height:100%;"
-          title="&Uacute;ltimas luces / Last Lights"></iframe></div>
+          title="&Uacute;ltimas luces / Last Lights"></iframe>
+        <button class="story04-mute-button" id="story04MuteButton" type="button" aria-label="Unmute video">
+          UNMUTE
+        </button>
+      </div>
       <script src="https://player.vimeo.com/api/player.js"></script>
+      <script>
+        const story04Player = new Vimeo.Player('story04Video');
+        const story04MuteButton = document.getElementById('story04MuteButton');
+
+        story04MuteButton.addEventListener('click', () => {
+          story04Player.getMuted().then((isMuted) => {
+            const nextMutedState = !isMuted;
+            return story04Player.setMuted(nextMutedState).then(() => {
+              story04MuteButton.textContent = nextMutedState ? 'UNMUTE' : 'MUTE';
+              story04MuteButton.setAttribute('aria-label', nextMutedState ? 'Unmute video' : 'Mute video');
+            });
+          });
+        });
+      </script>
     </div>
     <!-- <div class="margin">
       <img class="full-width-story-image" src="images/digital/04/Pignocchi_Layout_2.jpg" />
